@@ -1,0 +1,9 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Autorización de TikTok — RC Tech Lab</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:640px;margin:3rem auto;padding:0 1rem}</style></head><body>
+<h1>RC Tech Lab</h1>
+<p id="m">Volviendo a la aplicación local de RC Tech Lab… / Returning to the local RC Tech Lab app…</p>
+<script>
+// Redirección de retorno de TikTok (Login Kit). Reenvía el código a la app local del propietario (127.0.0.1). Esta página no guarda nada.
+location.replace('http://127.0.0.1:8765/callback' + location.search);
+setTimeout(function(){document.getElementById('m').textContent='Si no cambia sola, abre la app local de RC Tech Lab en esta computadora. / If nothing happens, open the local RC Tech Lab app on this computer.';},4000);
+</script></body></html>
